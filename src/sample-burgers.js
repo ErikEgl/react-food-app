@@ -1,56 +1,56 @@
-// Наше меню
+// Our menu
 const sampleBurgers = {
   burger1: {
-    name: 'Чизбургер',
+    name: 'Cheeseburger',
     image: '/images/cheese.jpg',
     desc:
-      'Классический бургер с бифштексом из 100% говядины с маринованными огурчиками и свежей пшеничной булочкой.',
-    price: 110,
+      'Classic 100% beef steak burger with pickled cucumbers and fresh wheat bun.',
+    price: 11,
     status: 'available'
   },
 
   burger2: {
-    name: 'Чикенбургер',
+    name: 'Chickenburger',
     image: '/images/chicken.jpg',
     desc:
-      'Куриный бургер с добавлением расплавленного сыра, соуса Барбекю и листового салата.',
-    price: 140,
+      'Chicken burger topped with melted cheese, BBQ sauce and lettuce.',
+    price: 14,
     status: 'available'
   },
 
   burger3: {
-    name: 'Двойной Гамбургер',
+    name: 'Double Hamburger',
     image: '/images/double.jpg',
     desc:
-      'Двойной гамбургер с бифштексом из 100% говядины и расплавленным сыром Чеддер и пряным соусом.',
-    price: 200,
+      'Double hamburger with 100% beef steak and melted cheddar cheese and spicy sauce.',
+    price: 20,
     status: 'unavailable'
   },
 
   burger4: {
-    name: 'Фишбургер',
+    name: 'Fishburger',
     image: '/images/fish.jpg',
     desc:
-      'Рыбное филе высшего качества c листовым салатом, маринованными огурчиками и преправленное легким майонезом.',
-    price: 150,
+      'Top quality fish fillet with leaf lettuce, pickled cucumbers and seasoned with light mayonnaise.',
+    price: 15,
     status: 'available'
   },
 
   burger5: {
-    name: 'Картофель Фри',
+    name: 'French fries',
     image: '/images/fries.jpg',
     desc:
-      'Хрустящие ломтики золотистого горячего картофеля Супер Фри, сделанные из отборного органического корнеплода!',
-    price: 85,
+      'Crispy Golden Hot Potato Super Fry Slices Made From Selected Organic Root Vegetables!',
+    price: 8.5,
     status: 'available'
   },
 
   burger6: {
-    name: 'King Бургер',
+    name: 'King Burger',
     image: '/images/ham.jpg',
     desc:
-      'Бургер из 100% отборной говядины, с жаренными ломтиками бекона и свежим расплавленным сыром, заправленный кетчупом и майонезом.',
-    price: 450,
+      '100% selected beef burger with fried bacon slices and fresh melted cheese dressed with ketchup and mayonnaise.',
+    price: 45,
     status: 'available'
   },
 
@@ -59,7 +59,7 @@ const sampleBurgers = {
     image: '/images/mega.jpg',
     desc:
       'Наш самый большой бургер, сделанный из свежайшего бифштекса, с добавлением расплавленного сыра Чеддер и соленых огурчиков.',
-    price: 500,
+    price: 50,
     status: 'available'
   },
 
@@ -68,7 +68,7 @@ const sampleBurgers = {
     image: '/images/pita.jpg',
     desc:
       'Четыре котлеты из 100% говядины, покрытые плавленным сыром Чеддер, со свежим листовым салатом в свежей пшеничной лепешке.',
-    price: 380,
+    price: 38,
     status: 'available'
   },
 
@@ -77,7 +77,7 @@ const sampleBurgers = {
     image: '/images/bakedFries.jpg',
     desc:
       'Порция свежих ломтиков картофеля, запеченых на открытом воздухе под мирно тлеющими углями',
-    price: 90,
+    price: 9,
     status: 'available'
   }
 };

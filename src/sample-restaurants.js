@@ -1,19 +1,19 @@
 // Our restaurants
 const restaurants = [
   {
-    title: 'Hot Burger Тверская',
-    url: 'hot-burger-tverskaya',
+    title: 'Hot Burger Tallinn',
+    url: 'hot-burger-tallinn',
     id: 1
   },
 
   {
-    title: 'Hot Burger Маросейка',
-    url: 'hot-burger-maroseyka',
+    title: 'Hot Burger Tartu',
+    url: 'hot-burger-tartu',
     id: 2
   },
   {
-    title: 'Hot Burger Петровка',
-    url: 'hot-burger-petrovka',
+    title: 'Hot Burger Narva',
+    url: 'hot-burger-narva',
     id: 3
   }
 ];
