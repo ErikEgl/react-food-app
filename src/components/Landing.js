@@ -1,20 +1,36 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import restaurants from "../sample-restaurants";
 
 class Landing extends React.Component {
+  state = {
+    display: false,
+    title: "",
+    url: "",
+  };
+
+  displayList = () => {
+    console.log("click!!");
+    console.log(this);
+  }
+
   render() {
     return (
       <div className="restaurant_select">
         <div className="restaurant_select_top">
-          <div className="restaurant_select_top-header">Choose restaurant</div>
+          <div
+            onClick={this.displayList}
+            className="restaurant_select_top-header font-effect-outline"
+          >
+            Choose restaurant
+          </div>
           <div className="arrow_picker">
             <div className="arrow_picker-up"></div>
             <div className="arrow_picker-down"></div>
           </div>
-          <div className="restaurant_select">
+          <div className="restaurant_select_bottom">
             <ul>
               {restaurants.map((restaurant) => {
-                return<li key={restaurant.id}>{restaurant.title}</li>
+                return <li key={restaurant.id}>{restaurant.title}</li>;
               })}
             </ul>
           </div>
