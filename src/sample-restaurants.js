@@ -1,4 +1,4 @@
-// Наши рестораны
+// Our restaurants
 const restaurants = [
   {
     title: 'Hot Burger Тверская',
