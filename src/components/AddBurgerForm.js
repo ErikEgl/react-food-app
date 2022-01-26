@@ -1,21 +1,41 @@
 import React from "react";
 
 class AddBurgerForm extends React.Component {
-    createBurger = (event) => {
-        event.preventDefault()
-        console.log('addburger');
-    }
+  nameRef = React.createRef();
+  priceRef = React.createRef();
+  statusRef = React.createRef();
+  descRef = React.createRef();
+  imageRef = React.createRef();
+  createBurger = (event) => {
+    event.preventDefault();
+    const burger = {
+      name: this.nameRef.current.value,
+      price: +this.priceRef.current.value,
+      status: this.statusRef.current.value,
+      desc: this.descRef.current.value,
+      image: this.imageRef.current.value,
+    };
+    this.props.addBurger(burger);
+    event.currentTarget.reset()
+  };
   render() {
     return (
       <form className="burger-edit" onSubmit={this.createBurger}>
-        <input name="name" type="text" placeholder="Name" autoComplete="off" />
         <input
+          ref={this.nameRef}
+          name="name"
+          type="text"
+          placeholder="Name"
+          autoComplete="off"
+        />
+        <input
+          ref={this.priceRef}
           name="price"
           type="text"
           placeholder="Price"
           autoComplete="off"
         />
-        <select className="status" name="status">
+        <select ref={this.statusRef} className="status" name="status">
           <option value="available" key="">
             Available
           </option>
@@ -23,8 +43,13 @@ class AddBurgerForm extends React.Component {
             Delete from menu
           </option>
         </select>
-        <input name="desc" placeholder="Desc" />
-        <input name="image" type="text" placeholder="Image" />
+        <textarea ref={this.descRef} name="desc" placeholder="Desc" />
+        <input
+          ref={this.imageRef}
+          name="image"
+          type="text"
+          placeholder="Image"
+        />
         <button type="submit">Add to menu</button>
       </form>
     );

@@ -4,6 +4,16 @@ import Order from "./Order";
 import MenuAdmin from "./MenuAdmin";
 
 class App extends React.Component {
+  state = {
+    bugers: {},
+    order: {}
+  }
+  addBurger = (burger) => {
+    console.log('addburger', burger);
+    const burgers = { ...this.state.burgers };
+    burgers[`burger${Date.now()}`] = burger;
+    this.setState({burgers})
+  }
   render() {
     return (
       <div className="burger-paradise">
@@ -12,7 +22,7 @@ class App extends React.Component {
 
         </div>
         <Order />
-        <MenuAdmin />
+        <MenuAdmin addBurger={this.addBurger}/>
       </div>
     );
   }
