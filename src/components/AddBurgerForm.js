@@ -36,10 +36,10 @@ class AddBurgerForm extends React.Component {
           autoComplete="off"
         />
         <select ref={this.statusRef} className="status" name="status">
-          <option value="available" key="">
+          <option value="available">
             Available
           </option>
-          <option value="unavailable" key="">
+          <option value="unavailable">
             Delete from menu
           </option>
         </select>

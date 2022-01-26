@@ -55,28 +55,28 @@ const sampleBurgers = {
   },
 
   burger7: {
-    name: 'Мега Бургер',
+    name: 'Mega Burger',
     image: '/images/mega.jpg',
     desc:
-      'Наш самый большой бургер, сделанный из свежайшего бифштекса, с добавлением расплавленного сыра Чеддер и соленых огурчиков.',
+      'Our largest burger ever made with fresh steak topped with melted cheddar cheese and pickles.',
     price: 50,
     status: 'available'
   },
 
   burger8: {
-    name: 'Бургер в Пите',
+    name: 'Burger in Pete',
     image: '/images/pita.jpg',
     desc:
-      'Четыре котлеты из 100% говядины, покрытые плавленным сыром Чеддер, со свежим листовым салатом в свежей пшеничной лепешке.',
+      'Four 100% beef patties topped with melted Cheddar cheese with fresh leaf lettuce in a fresh wheat tortilla.',
     price: 38,
     status: 'available'
   },
 
   burger9: {
-    name: 'Village Фри',
+    name: 'Village Free',
     image: '/images/bakedFries.jpg',
     desc:
-      'Порция свежих ломтиков картофеля, запеченых на открытом воздухе под мирно тлеющими углями',
+      'A portion of fresh potato slices baked in France under peacefully smoldering coals',
     price: 9,
     status: 'available'
   }
