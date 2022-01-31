@@ -1,4 +1,5 @@
 import React from "react";
+import Shipment from "./Shipment";
 
 class Order extends React.Component {
   renderOrder = (key) => {
@@ -40,11 +41,7 @@ class Order extends React.Component {
       <div className="order-wrap">
         <h2>Your order</h2>
         <ul className="order">{orderIds.map(this.renderOrder)}</ul>
-        <div className="total">
-          <div className="total_wrap">
-            <div className="total_wrap-final">Total: {total}€</div>
-          </div>
-        </div>
+        {total > 0}
       </div>
     );
   }
