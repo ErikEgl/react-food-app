@@ -5,7 +5,7 @@ const sampleBurgers = {
     image: '/images/cheese.jpg',
     desc:
       'Classic 100% beef steak burger with pickled cucumbers and fresh wheat bun.',
-    price: 11,
+    price: 5.5,
     status: 'available'
   },
 
@@ -14,7 +14,7 @@ const sampleBurgers = {
     image: '/images/chicken.jpg',
     desc:
       'Chicken burger topped with melted cheese, BBQ sauce and lettuce.',
-    price: 14,
+    price: 7,
     status: 'available'
   },
 
@@ -23,7 +23,7 @@ const sampleBurgers = {
     image: '/images/double.jpg',
     desc:
       'Double hamburger with 100% beef steak and melted cheddar cheese and spicy sauce.',
-    price: 20,
+    price: 10,
     status: 'unavailable'
   },
 
@@ -32,7 +32,7 @@ const sampleBurgers = {
     image: '/images/fish.jpg',
     desc:
       'Top quality fish fillet with leaf lettuce, pickled cucumbers and seasoned with light mayonnaise.',
-    price: 15,
+    price: 7.5,
     status: 'available'
   },
 
@@ -41,7 +41,7 @@ const sampleBurgers = {
     image: '/images/fries.jpg',
     desc:
       'Crispy Golden Hot Potato Super Fry Slices Made From Selected Organic Root Vegetables!',
-    price: 8.5,
+    price: 4.25,
     status: 'available'
   },
 
@@ -50,7 +50,7 @@ const sampleBurgers = {
     image: '/images/ham.jpg',
     desc:
       '100% selected beef burger with fried bacon slices and fresh melted cheese dressed with ketchup and mayonnaise.',
-    price: 45,
+    price: 17,
     status: 'available'
   },
 
@@ -59,7 +59,7 @@ const sampleBurgers = {
     image: '/images/mega.jpg',
     desc:
       'Our largest burger ever made with fresh steak topped with melted cheddar cheese and pickles.',
-    price: 50,
+    price: 20,
     status: 'available'
   },
 
@@ -68,7 +68,7 @@ const sampleBurgers = {
     image: '/images/pita.jpg',
     desc:
       'Four 100% beef patties topped with melted Cheddar cheese with fresh leaf lettuce in a fresh wheat tortilla.',
-    price: 38,
+    price: 15,
     status: 'available'
   },
 
@@ -77,7 +77,7 @@ const sampleBurgers = {
     image: '/images/bakedFries.jpg',
     desc:
       'A portion of fresh potato slices baked in France under peacefully smoldering coals',
-    price: 9,
+    price: 4.5,
     status: 'available'
   }
 };

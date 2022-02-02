@@ -41,7 +41,11 @@ class Order extends React.Component {
       <div className="order-wrap">
         <h2>Your order</h2>
         <ul className="order">{orderIds.map(this.renderOrder)}</ul>
-        {total > 0}
+        {total > 0 ? (
+          <Shipment total={total}/>
+        ) : (
+          <div className="nothingSelected">Choose something and add to order</div>
+        )}
       </div>
     );
   }
