@@ -4,11 +4,26 @@ import Order from "./Order";
 import MenuAdmin from "./MenuAdmin";
 import Burger from "./Burger";
 import sampleBurgers from "../sample-burgers";
+import base from "../base";
+
 class App extends React.Component {
   state = {
     burgers: {},
     order: {},
   };
+
+  componentDidMount() {
+    const { params } = this.props.match;
+    this.ref = base.syncState(`${params.restaurantId}/burgers`, {
+      context: this,
+      state: "burgers",
+    });
+  }
+
+  componentWillUnmount() {
+    base.removeBinding(this.ref);
+  }
+
   addBurger = (burger) => {
     const burgers = { ...this.state.burgers };
     burgers[`burger${Date.now()}`] = burger;
@@ -23,7 +38,7 @@ class App extends React.Component {
     const order = { ...this.state.order };
     order[key] = order[key] + 1 || 1;
     this.setState({ order });
-  }
+  };
 
   render() {
     return (
@@ -31,17 +46,19 @@ class App extends React.Component {
         <div className="menu">
           <Header title="Very Hot Burger" />
           <ul className="burgers">
-          {Object.keys(this.state.burgers).map(key => {
-              return <Burger 
-              index={key}
-              key={key} 
-              addToOrder={this.addToOrder}
-              details={this.state.burgers[key]}
-              />
+            {Object.keys(this.state.burgers).map((key) => {
+              return (
+                <Burger
+                  index={key}
+                  key={key}
+                  addToOrder={this.addToOrder}
+                  details={this.state.burgers[key]}
+                />
+              );
             })}
           </ul>
         </div>
-        <Order burgers={this.state.burgers} order={this.state.order}/>
+        <Order burgers={this.state.burgers} order={this.state.order} />
         <MenuAdmin
           addBurger={this.addBurger}
           loadSampleBurgers={this.loadSampleBurgers}
