@@ -1,10 +1,20 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 class Burger extends React.Component {
-
+  static propTypes = {
+    details: PropTypes.shape({
+      image: PropTypes.string,
+      name: PropTypes.string,
+      price: PropTypes.number,
+      desc: PropTypes.string,
+      status: PropTypes.string,
+    }),
+    index: PropTypes.string,
+    addToOrder: PropTypes.func,
+  };
   handleClick = () => {
     this.props.addToOrder(this.props.index);
-  }
+  };
 
   render() {
     const { image, name, price, desc, status } = this.props.details;
@@ -20,10 +30,12 @@ class Burger extends React.Component {
             <span className="price">{price} €</span>
           </h3>
           <p>{desc}</p>
-          <button onClick={this.handleClick} 
-            className="buttonOrder" 
-            disabled={!isAvailable}>
-              {isAvailable ? "Order" : "Out of stock"}
+          <button
+            onClick={this.handleClick}
+            className="buttonOrder"
+            disabled={!isAvailable}
+          >
+            {isAvailable ? "Order" : "Out of stock"}
           </button>
         </div>
       </li>

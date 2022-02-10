@@ -1,6 +1,10 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 class AddBurgerForm extends React.Component {
+  static propTypes = {
+    AddBurgerForm: PropTypes.func,
+  };
+
   nameRef = React.createRef();
   priceRef = React.createRef();
   statusRef = React.createRef();
@@ -16,7 +20,7 @@ class AddBurgerForm extends React.Component {
       image: this.imageRef.current.value,
     };
     this.props.addBurger(burger);
-    event.currentTarget.reset()
+    event.currentTarget.reset();
   };
   render() {
     return (
@@ -36,12 +40,8 @@ class AddBurgerForm extends React.Component {
           autoComplete="off"
         />
         <select ref={this.statusRef} className="status" name="status">
-          <option value="available">
-            Available
-          </option>
-          <option value="unavailable">
-            Delete from menu
-          </option>
+          <option value="available">Available</option>
+          <option value="unavailable">Delete from menu</option>
         </select>
         <textarea ref={this.descRef} name="desc" placeholder="Desc" />
         <input
