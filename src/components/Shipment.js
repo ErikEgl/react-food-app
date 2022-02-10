@@ -15,7 +15,13 @@ class Shipment extends React.Component {
         <div className="total_wrap">
           <div>
             <div>Delivery cost: {total > 0 ? shippingNeon : null}</div>
-            <div className="total_wrap-free">{total < 20 ? `Order for ${20 - total} more euros and get delivery for 0.99 euros` : null}</div>
+            <div className="total_wrap-free">
+              {total < 20
+                ? `Order for ${
+                    20 - total
+                  } more euros and get delivery for 0.99 euros`
+                : null}
+            </div>
           </div>
           <div className="total_wrap-final">Total: {total}€</div>
         </div>
