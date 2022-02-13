@@ -44,7 +44,7 @@ class Order extends React.Component {
               classNames="count" 
               key={count} 
               timeout={{ enter: 500, exit: 500 }}>
-                <span>{count}pcs</span>
+                <span>{count}pcs&nbsp;</span>
               </CSSTransition>
             </TransitionGroup>
             {burger.name}
