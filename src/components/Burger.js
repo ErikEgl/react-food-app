@@ -22,7 +22,7 @@ class Burger extends React.Component {
     return (
       <li className="menu-burger">
         <div className="image-container">
-          <img src={image} alt={image} />
+          <img src={image} alt={name} />
         </div>
         <div className="burger-details">
           <h3 className="burger-name">
