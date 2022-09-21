@@ -20,7 +20,7 @@ const Landing = (props) => {
   };
 
   const goToRestaurant = () => {
-    props.history.push(`/restaurant/${url}`);
+    props.history.push(`/react-food-app/restaurant/${url}`);
   };
 
   return (

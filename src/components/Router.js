@@ -9,8 +9,8 @@ const Router = () => {
     return(
         <BrowserRouter>
             <Switch>
-                <Route exact path='/' component={Landing} />
-                <Route path='/restaurant/:restaurantId' component={App} />
+                <Route exact path='/react-food-app' component={Landing} />
+                <Route path='/react-food-app/restaurant/:restaurantId' component={App} />
                 <Route component={NotFound} />
             </Switch>
         </BrowserRouter>
