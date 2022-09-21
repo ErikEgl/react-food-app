@@ -27,7 +27,7 @@ class EditBurgerForm extends React.Component {
             <div className='burger-edit'>
                 <input onChange={this.handleChange} name="name" type='text' value={this.props.burger.name}/>
                 <input onChange={this.handleChange} name="price" type='text' value={this.props.burger.price}/>
-                <select onChange={this.handleChange} className="status" name="status"value={this.props.burger.status}>
+                <select onChange={this.handleChange} className="status" name="status" value={this.props.burger.status}>
                     <option value="available">available</option>
                     <option value="unavailable">unavailable</option>
                 </select>
