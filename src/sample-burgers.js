@@ -2,7 +2,7 @@
 const sampleBurgers = {
   burger1: {
     name: 'Cheeseburger',
-    image: '/images/cheese.jpg',
+    image: '/react-food-app/images/cheese.jpg',
     desc:
       'Classic 100% beef steak burger with pickled cucumbers and fresh wheat bun.',
     price: 5.5,
@@ -11,7 +11,7 @@ const sampleBurgers = {
 
   burger2: {
     name: 'Chickenburger',
-    image: '/images/chicken.jpg',
+    image: '/react-food-app/images/chicken.jpg',
     desc:
       'Chicken burger topped with melted cheese, BBQ sauce and lettuce.',
     price: 7,
@@ -20,7 +20,7 @@ const sampleBurgers = {
 
   burger3: {
     name: 'Double Hamburger',
-    image: '/images/double.jpg',
+    image: '/react-food-app/images/double.jpg',
     desc:
       'Double hamburger with 100% beef steak and melted cheddar cheese and spicy sauce.',
     price: 10,
@@ -29,7 +29,7 @@ const sampleBurgers = {
 
   burger4: {
     name: 'Fishburger',
-    image: '/images/fish.jpg',
+    image: '/react-food-app/images/fish.jpg',
     desc:
       'Top quality fish fillet with leaf lettuce, pickled cucumbers and seasoned with light mayonnaise.',
     price: 7.5,
@@ -38,7 +38,7 @@ const sampleBurgers = {
 
   burger5: {
     name: 'French fries',
-    image: '/images/fries.jpg',
+    image: '/react-food-app/images/fries.jpg',
     desc:
       'Crispy Golden Hot Potato Super Fry Slices Made From Selected Organic Root Vegetables!',
     price: 4.25,
@@ -47,7 +47,7 @@ const sampleBurgers = {
 
   burger6: {
     name: 'King Burger',
-    image: '/images/ham.jpg',
+    image: '/react-food-app/images/ham.jpg',
     desc:
       '100% selected beef burger with fried bacon slices and fresh melted cheese dressed with ketchup and mayonnaise.',
     price: 17,
@@ -56,7 +56,7 @@ const sampleBurgers = {
 
   burger7: {
     name: 'Mega Burger',
-    image: '/images/mega.jpg',
+    image: '/react-food-app/images/mega.jpg',
     desc:
       'Our largest burger ever made with fresh steak topped with melted cheddar cheese and pickles.',
     price: 20,
@@ -65,7 +65,7 @@ const sampleBurgers = {
 
   burger8: {
     name: 'Burger in Pete',
-    image: '/images/pita.jpg',
+    image: '/react-food-app/images/pita.jpg',
     desc:
       'Four 100% beef patties topped with melted Cheddar cheese with fresh leaf lettuce in a fresh wheat tortilla.',
     price: 15,
@@ -74,7 +74,7 @@ const sampleBurgers = {
 
   burger9: {
     name: 'Village Free',
-    image: '/images/bakedFries.jpg',
+    image: '/react-food-app/images/bakedFries.jpg',
     desc:
       'A portion of fresh potato slices baked in France under peacefully smoldering coals',
     price: 4.5,
