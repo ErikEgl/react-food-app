@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c4b6d5b0b2de7cf82eb9fc0f0446ec6e",
+    "revision": "d30cddfe4c8d9187b5bd53eca54e5448",
     "url": "/react-food-app/index.html"
   },
   {
-    "revision": "e910cd47a57a50789fce",
-    "url": "/react-food-app/static/css/main.d9892f01.chunk.css"
+    "revision": "297404f6d02d324c909b",
+    "url": "/react-food-app/static/css/main.139352dc.chunk.css"
   },
   {
     "revision": "e38bd7365b8bab21c532",
     "url": "/react-food-app/static/js/2.5bd760fe.chunk.js"
   },
   {
-    "revision": "e910cd47a57a50789fce",
-    "url": "/react-food-app/static/js/main.b1f02ac0.chunk.js"
+    "revision": "297404f6d02d324c909b",
+    "url": "/react-food-app/static/js/main.2e60c96a.chunk.js"
   },
   {
     "revision": "65b9e9e467f50e192754",
@@ -24,11 +24,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-food-app/static/media/burger-logo-4.385ae8f1.jpg"
   },
   {
-    "revision": "1d4aace8ece50372c4a71e8334f161a1",
-    "url": "/react-food-app/static/media/down.1d4aace8.svg"
+    "revision": "45ab2799ba811ebd8effc6cefaead0e0",
+    "url": "/react-food-app/static/media/down.45ab2799.svg"
   },
   {
-    "revision": "551b5c6b9714b6eafb5739b138485841",
-    "url": "/react-food-app/static/media/up.551b5c6b.svg"
+    "revision": "2a5cfc3e6cfbfa4a29b113252299520c",
+    "url": "/react-food-app/static/media/up.2a5cfc3e.svg"
   }
 ]);
